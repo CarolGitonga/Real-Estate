@@ -5,3 +5,10 @@
         <button class="primary" type="button">Search </button>
     </form>
 </section>
+<section class="results">
+    <app-housinglocation
+*ngFor="let housingLocation of housingLocationList"
+[housingLocation]="housingLocation">
+    </app-housinglocation>
+
+</section>
